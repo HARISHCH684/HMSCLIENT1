@@ -1,0 +1,14 @@
+<form [formGroup]="patientFile" (ngSubmit)="OnPatientFile()">
+    <h3>PatientFile</h3>
+    <div class="mb-3">
+        <label form="healthIssue" class="form-label">healthIssue  </label>
+        <input class="form-control" id="healthIssue" aria-describedby="healthIssue"  placeholder="HealthIssue" formControlName="healthIssue"> 
+    </div>
+    <br><br>
+    <div class="mb-3">
+        <label form="prescription" class="form-label">prescription  </label>
+        <input class="form-control" id="prescription" aria-describedby="prescription" placeholder="Prescription" formControlName="prescription"> 
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

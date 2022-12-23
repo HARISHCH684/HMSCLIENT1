@@ -1,0 +1,27 @@
+<div class="container" style="text-align: center;">
+    <button type="button" (click)="getPatientDetails()"> get data</button>
+   
+
+<table border ="1" style="margin-left: auto;margin-right: auto;" >
+    <thead>
+        <tr>
+            <th>Patient Id</th>
+            <th>PatientName</th>
+            <th>Age</th>
+            <th>Health Issue</th>
+            <th>Prescription</th>
+        
+        </tr>
+    
+        <tr *ngFor="let pf of patfile">
+            <td>{{pf.patient.patientId}}</td>
+            <td>{{pf.patient.patientName}}</td>
+            <td>{{pf.patient.age}}</td>
+            <td>{{pf.healthIssue}}</td>
+            <td>{{pf.prescription}}</td>
+            
+        </tr>
+    </thead>
+</table>
+
+</div>
